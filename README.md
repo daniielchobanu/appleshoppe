@@ -2,7 +2,7 @@
 
 &nbsp;
 
-# Link to the project [**ShoppeStore.com.ua**](https://shoppestore.netlify.app 'Go to the project website')
+# Link to the project [**AppleStore.com.ua**]([https://shoppestore.netlify.app](https://appleshoppe.netlify.app/) 'Go to the project website')
 
 &nbsp;
 
