@@ -1,0 +1,94 @@
+<section class="blog">
+   <h1>Blog</h1>
+   <aside class="blog__navbar">
+
+      <div class="mobile-categories_button">
+         <img src="./assets/img/Shop_img/filter.png" alt="">
+         <p>Categories</p>
+      </div>
+      <div class="mobile-blog_categories">
+         <div class="blog__search">
+            <label for="search-input"></label>
+            <div class="input-div">
+               <input type="text" placeholder="Search..." id="search-input" />
+               <img class="light-them" data-dark-src="./assets/img/dark-them/search-dark-them.svg" data-light-src="./assets/img/Shop_img/search-icon.svg" src="./assets/img/Shop_img/search-icon.svg" alt="" />
+            </div>
+         </div>
+         <div class="blog_categories">
+            <h4>Categories</h4>
+            <ul>
+               <li id="categoriesBtns" class="categories__fashion">iPhone</li>
+               <li id="categoriesBtns" class="categories__style">Mac</li>
+               <li id="categoriesBtns" class="categories__accessories">iPad</li>
+               <li id="categoriesBtns" class="categories__season">Watch</li>
+            </ul>
+         </div>
+      </div>
+
+   </aside>
+   <div class="blog__contents">
+      <div class="searchBlock blog__cards__content"></div>
+      <div class="main-block">
+         <div class="content__cards" data-card-number="1">
+            <div class="card__img">
+               <a href="./blog-addopt.html" id="clickToAddoptPage" data-post-number="1"><img
+                     src="./assets/img/Home_img/Body/15pro.png" alt="card_photo"></a>
+            </div>
+            <p class="card__date"><span id="blogCategories">iPhone</span> - September 15, 2023</p>
+            <h3 class="blog__card__name">iphone 15</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus
+               elit ex vitae libero... </p>
+          <!--  <a href="./blog-addopt.html" class="card__read-more" id="clickToAddoptPage" data-post-number="1">Read
+               More</a>--> 
+         </div>
+         <div class="content__cards" data-card-number="2">
+            <div class="card__img">
+               <a href="./blog-addopt.html" id="clickToAddoptPage" data-post-number="2"><img
+                     src="./assets/img/Home_img/Body/macair.png" alt="card_photo"></a>
+            </div>
+            <p class="card__date"><span id="blogCategories">Mac</span> - January 15, 2023</p>
+            <h3 class="blog__card__name">MacBook Air</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus
+               elit ex vitae libero... </p>
+          <!--  <a href="./blog-addopt.html" class="card__read-more" id="clickToAddoptPage" data-post-number="2">Read
+               More</a>--> 
+         </div>
+         <div class="content__cards" data-card-number="3">
+            <div class="card__img">
+               <a href="./blog-addopt.html" id="clickToAddoptPage" data-post-number="3"><img
+                     src="./assets/img/Home_img/Body/macpro.png" alt="card_photo"></a>
+            </div>
+            <p class="card__date"><span id="blogCategories">Mac</span> - March 22, 2021</p>
+            <h3 class="blog__card__name">MacBook Pro</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus
+               elit ex vitae libero... </p>
+          <!-- <a href="./blog-addopt.html" class="card__read-more" id="clickToAddoptPage" data-post-number="3">Read
+               More</a>--> 
+         </div>
+         <div class="content__cards" data-card-number="4">
+            <div class="card__img">
+               <a href="./blog-addopt.html" id="clickToAddoptPage" data-post-number="4"><img
+                     src="./assets/img/Home_img/Body/ipadair.png" alt="card_photo"></a>
+            </div>
+            <p class="card__date"><span id="blogCategories">iPad</span> - May 5, 2022</p>
+            <h3 class="blog__card__name">iPad Air</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. faucibus augue, a maximus
+               elit ex vitae libero... </p>
+           <!-- <a href="./blog-addopt.html" class="card__read-more" id="clickToAddoptPage" data-post-number="4">Read
+               More</a>--> 
+         </div>
+         
+      </div>
+      <div class="blog__cards__pages">
+         <div class="cards__pages cards__pages__arrow-back">
+            <img data-dark-src="./assets/img/dark-them/arrowRight-dark-them.svg" class="light-them" data-light-src="./assets/img/Blog_img/svg/arrow.svg" src="./assets/img/Blog_img/svg/arrow.svg" alt="arrow">
+         </div>
+
+         <div class="cards__pages cards__pages__arrow">
+            <img data-dark-src="./assets/img/dark-them/arrowRight-dark-them.svg" class="light-them" data-light-src="./assets/img/Blog_img/svg/arrow.svg" src="./assets/img/Blog_img/svg/arrow.svg" alt="arrow">
+         </div>
+      </div>
+   </div>
+</section>
+
+{% include "_html/_base/_includes/_Them-switcher.html" %}

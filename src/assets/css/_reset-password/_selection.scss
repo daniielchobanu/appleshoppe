@@ -1,0 +1,173 @@
+.reset-password {
+   margin: 0 auto;
+
+   //Mobile
+   @media (max-width: 700.98px) {
+      padding-top: 135px;
+   }
+
+
+   &__container {
+      max-width: 561px;
+      margin: 0 auto;
+      text-align: center;
+
+      @media (max-width: 561px) {
+         width: 100%;
+      }
+   }
+
+   &__block-header {
+      text-align: center;
+      .reset-password__text{
+         color: var(--black-color);
+      }
+
+      &:not(:last-child) {
+         margin-bottom: 76px;
+      }
+
+      //Mobile 
+      @media (max-width: 499.98px) {
+         &:not(:last-child) {
+            margin-bottom: 64px;
+            font-size: 14px;
+         }
+      }
+
+      //Mobile small
+      @media (max-width: 499.98px) {
+         &:not(:last-child) {
+
+            font-size: 12px;
+         }
+      }
+   }
+
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 39px;
+      }
+
+      //Mobile
+      @media (max-width: 700.98px) {
+         font-size: 25px;
+
+         &:not(:last-child) {
+            margin-bottom: 28px;
+         }
+
+         //Mobile small
+      }
+
+      @media (max-width: 499.98px) {
+         font-size: 20px;
+
+         &:not(:last-child) {
+            margin-bottom: 16px;
+         }
+      }
+   }
+
+   &__text {
+      max-width: 400px;
+      margin: 0 auto;
+   }
+
+}
+
+.form-reset {
+   max-width: 500px;
+   margin: 0 auto;
+
+   &__body {
+      position: relative;
+
+      &:not(:last-child) {
+         margin-bottom: 64px;
+      }
+   }
+
+   &__input {
+      width: 100%;
+      padding: 12px 0;
+      border-bottom: 1px solid $gray-color;
+
+      &::placeholder {
+         font-family: DM Sans;
+         font-size: 16px;
+         color: $placeholder-color;
+         font-weight: 400;
+
+         //Tablet
+         @media (max-width: 700.98px) {
+            font-size: 14px;
+         }
+
+         //Mobile small
+         @media (max-width: 467.98px) {
+            font-size: 12px;
+         }
+      }
+
+      @media (max-width: 700.98px) {
+         padding: 8px 0;
+         font-size: 14px;
+      }
+
+      @media (max-width: 467.98px) {
+         padding: 5px 0;
+         font-size: 12px;
+      }
+
+   }
+
+   &__button-reset {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      right: 3px;
+      bottom: 15px;
+      display: none;
+
+      & i {
+         color: $gray-color;
+         transition: color 0.3s;
+
+         &:hover {
+            color: $dark-gray-color;
+         }
+      }
+
+      //Tablet
+      @media (max-width: 700.98px) {
+         font-size: 14px;
+         bottom: 12px;
+
+      }
+
+      //Mobile small
+      @media (max-width: 467.98px) {
+         font-size: 12px;
+         bottom: 9px;
+      }
+   }
+
+   &__button {
+      width: 100%;
+      height: 53px;
+      @include black-btn
+   }
+
+   .error-message {
+      position: absolute;
+      width: 100%;
+      left: -205px;
+      bottom: -20px;
+      color: $errors-color;
+      font-family: "DM Sans";
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 10px;
+   }
+}

@@ -1,0 +1,123 @@
+.error {
+   margin-top: 50px;
+   padding-bottom: 0;
+   div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+         margin-bottom: 24px;
+      }
+
+      p {
+         max-width: 436px;
+         color: $placeholder-color;
+         text-align: center;
+
+         font-family: DM Sans;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 26px;
+      }
+
+      a {
+         @include white-btn;
+         margin-top: 64px;
+         width: 187px;
+         height: 53px;
+         font-size: 16px;
+         transition: all 0.4s linear;
+         font-weight: 400;
+      }
+
+      a:hover {
+         transition: all 0.4s linear;
+      }
+
+      a:active {
+         background-color: var(--black-color);
+         color: var(--white-color);
+      }
+   }
+
+}
+
+@media screen and (max-width: 900px) {
+   .error404 {
+      .error {
+         padding-bottom: 150px;
+
+         div {
+            h1 {
+               margin-bottom: 30px;
+               font-size: 25px;
+            }
+
+            p {
+               margin: 10px;
+               font-size: 18px;
+               line-height: 0px;
+            }
+
+            a {
+               margin-top: 50px;
+               width: 150px;
+               height: 50px;
+               font-size: 14px;
+            }
+         }
+      }
+
+      footer {
+         margin: 0;
+      }
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .error404 {
+      .header {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         margin-top: 15px;
+      }
+
+      .header__link {
+         display: none;
+      }
+
+      .error {
+         margin-top: 100px;
+
+         div {
+            h1 {
+               margin: 0;
+               font-size: 22px;
+            }
+
+            p {
+               margin: 10px 0 24px 0;
+               font-size: 16px;
+               line-height: 10px;
+            }
+
+            a {
+               margin-top: 0;
+               width: 115px;
+               height: 32px;
+               font-size: 12px;
+            }
+         }
+      }
+
+      footer {
+         // visibility: hidden;
+         display: none;
+      }
+   }
+}

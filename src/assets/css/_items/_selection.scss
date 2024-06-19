@@ -1,0 +1,288 @@
+.shop-latest {
+   .shop-latest__block {
+      .shop-latest__img {
+         position: relative;
+
+         img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+         }
+
+         .productVariant {
+            display: none;
+         }
+
+         .shop-latest_hover {
+            opacity: 0;
+            background-color: var(--white-color-rgba);
+            min-width: 100%;
+            position: absolute;
+            bottom: 4px;
+            transition: all 0.4s ease;
+            border-radius:  0 0 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+         }
+
+         &:hover .shop-latest_hover {
+            opacity: 1;
+         }
+
+
+
+         .shop-latest_hover_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 100%;
+            transition: all 0.3s ease;
+            p {
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: normal;
+               text-transform: uppercase;
+            }
+
+            
+         }
+
+         .add-new,
+         .add-discount,
+         .category,
+         .add-sold {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 63px;
+            height: 24px;
+            border-radius: 4px;
+            font-family: DM Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+
+            top: 16px;
+            left: 16px;
+            cursor: pointer;
+         }
+
+         .label-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+
+            div {
+               &:first-child {
+                  margin-right: 10px;
+               }
+            }
+         }
+
+         // Class for "Sold" label
+         .add-sold {
+            color: var(--white-color);
+            background-color: $accent-color;
+         }
+
+         // Class for "-%price%" label
+         .add-discount,
+         .add-popular {
+            color: var(--white-color);
+            background-color: $accent-color;
+         }
+
+         // Class for "category" label
+         .add-earrings,
+         .add-brooch,
+         .add-bracelets,
+         .add-pendants {
+            background-color: var(--black-color);
+            color: var(--white-color);
+         }
+
+         // Class for "New" label
+         .add-new {
+            background-color: var(--white-color);
+            color: var(--black-color);
+         }
+      }
+
+      
+
+      .price-discount {
+         margin-right: 16px;
+         color: $errors-color;
+         text-decoration: line-through 1px;
+      }
+   }
+}
+
+
+@media (max-width: 1000px) {
+   .shop-latest {
+      margin-bottom: 100px;
+   }
+}
+
+@media (max-width: 860px) {
+   .shop-latest {
+      .shop-latest-blocks {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr) !important;
+         grid-template-rows: repeat(2, 1fr);
+         gap: 20px 24px !important;
+         margin: 0 auto;
+      }
+
+      .shop-latest__block {
+         .shop-latest__img {
+            .shop-latest_hover {
+               min-height: 40px;
+            }
+
+
+         }
+
+         .shop-latest_hover_container {
+            min-height: 30px;
+
+            p {
+               font-size: 14px !important;
+            }
+         }
+
+         .shop-latest__name {
+            margin: 15px 0 8px 0;
+
+            font-size: 15px;
+         }
+
+         .shop-latest__price {
+            font-size: 15px;
+         }
+      }
+   }
+}
+
+@media (max-width: 680px) {
+   .shop-latest {
+      margin-top: 25px;
+      .shop-latest-text {
+         margin: 0 0 20px 0;
+         h1 {
+            font-size: 24px;
+         }
+
+         a {
+            font-size: 16px;
+         }
+      }
+
+      .shop-latest-blocks {
+         grid-template-columns: repeat(2, 1fr) !important;
+         gap: 20px 16px !important;
+      }
+
+      .shop-latest__block {
+         .shop-latest__img {
+            .shop-latest_hover {
+               min-height: 35px;
+            }
+
+
+         }
+
+         .shop-latest_hover_container {
+            p {
+               font-size: 14px;
+            }
+         }
+
+         .shop-latest__name {
+            margin: 0;
+            font-size: 17px;
+         }
+
+         .shop-latest__price {
+            font-size: 17px;
+            line-height: 18px;
+         }
+      }
+   }
+}
+
+@media (max-width: 425px) {
+   .shop-latest {
+      .shop-latest-text {
+         h1 {
+            font-size: 20px;
+         }
+
+         a {
+            font-size: 16px;
+         }
+      }
+
+      .shop-latest-blocks {
+         .shop-latest__block {
+            .shop-latest__name {
+               font-size: 14px;
+            }
+
+            .shop-latest__price {
+               font-size: 14px;
+            }
+
+            .shop-latest__img {
+               .shop-latest_hover_container {
+                  p {
+
+                     font-size: 12px !important;
+                  }
+               }
+
+               .label-container {
+                  top: 8px;
+                  left: 8px;
+
+                  .add-new,
+                  .add-discount,
+                  .add-category,
+                  .add-sold,
+                  .category {
+                     width: 55px;
+                     height: 20px;
+                     font-size: 12px;
+
+                     &::before {
+                        margin: -5px;
+                     }
+
+                  }
+               }
+            }
+
+            .add-new,
+            .add-discount,
+            .add-category,
+            .add-sold {
+               &::before {
+                  margin: -5px;
+               }
+
+               width: 30px;
+            }
+
+         }
+      }
+   }
+}
